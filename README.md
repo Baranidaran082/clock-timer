@@ -5,7 +5,6 @@ A simple and responsive clock timer built using JavaScript, HTML, and CSS. This 
 ## Features
 
 - Displays the current time dynamically.
-- Easy-to-use start, pause, and reset functionality.
 - Responsive design that adapts to various screen sizes.
 - Clean and minimalistic interface.
 
