@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #7701e3;
+        margin: 0;
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+
+      .timer {
+        display: flex;
+        gap: 20px;
+      }
+
+      .time-box {
+        background-color: black;
+        color: white;
+        padding: 90px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 80px;
+      }
+
+      .label {
+        font-size: 30px;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="timer">
+      <div class="time-box">
+        <span id="date">00</span>
+        <div class="label">DATES</div>
+      </div>
+      <div class="time-box">
+        <span id="hours">00</span>
+        <div class="label">HOURS</div>
+      </div>
+      <div class="time-box">
+        <span id="minutes">00</span>
+        <div class="label">MINUTES</div>
+      </div>
+      <div class="time-box">
+        <span id="seconds">00</span>
+        <div class="label">SECONDS</div>
+      </div>
+    </div>
+
+    <script>
+      function barani() {
+        var day = new Date();
+        document.getElementById("date").textContent = day.getDate();
+        document.getElementById("hours").textContent = day.getHours();
+        document.getElementById("minutes").textContent = day.getMinutes();
+        document.getElementById("seconds").textContent = day.getSeconds();
+      }
+
+      setInterval(barani, 1000);
+      barani();
+    </script>
+  </body>
+</html>
